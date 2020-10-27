@@ -1,5 +1,5 @@
 # syntax = docker/dockerfile:experimental
-ARG OF_WATCHDOG_VERSION=0.7.7
+ARG OF_WATCHDOG_VERSION=0.8.1
 ARG IMAGE=alpine
 ARG IMAGE_VERSION=3.12
 
