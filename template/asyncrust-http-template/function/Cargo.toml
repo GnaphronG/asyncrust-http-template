@@ -5,4 +5,4 @@ authors = ["Gnaphron <gnaphron@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-hyper = "0.13"
+hyper = "0.14"

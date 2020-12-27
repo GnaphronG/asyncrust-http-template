@@ -1,2 +1,2 @@
-language: gstreamer-rust
+language: asyncrust-http-template
 fprocess: main
