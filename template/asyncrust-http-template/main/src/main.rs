@@ -20,7 +20,7 @@ async fn handler_fn(_req: Request<Body>) -> Result<Response<Body>, Error> {
 }
 
 async fn run() {
-    let addr = ([127, 0, 0, 1], 3000).into();
+    let addr = ([0, 0, 0, 0], 3000).into();
 
     let make_service = make_service_fn(|_conn| {
         async { Ok::<_, Error>(service_fn(handler_fn)) }

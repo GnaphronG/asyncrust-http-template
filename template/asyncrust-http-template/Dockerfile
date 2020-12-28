@@ -30,7 +30,7 @@ FROM ${IMAGE}:${IMAGE_VERSION} as runner
 ARG ADDITIONAL_PACKAGE
 
 # Install packages and add non-root user
-RUN apk --no-cache add curl ca-certificates ${ADDITIONAL_PACKAGE} \
+RUN apk --no-cache add libgcc ca-certificates ${ADDITIONAL_PACKAGE} \
     && addgroup -S app && adduser -S -g app app
 
 WORKDIR /home/app
